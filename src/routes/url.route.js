@@ -7,6 +7,6 @@ router.use(verifyJWT)
 
 
 router.post("/shorten", shortenUrl);
-router.get("/id/:shortId", redirectUrl);
+router.get("/id/:shortUrl", redirectUrl);
 
 export default router;
