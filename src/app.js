@@ -19,6 +19,7 @@ app.use(cookieParser())
 
 import userRouter from "./routes/user.route.js"
 import urlRouter from "./routes/url.route.js"
+import dashboardRouter from "./routes/dashboard.route.js" 
 
 
 
@@ -26,6 +27,7 @@ import urlRouter from "./routes/url.route.js"
 
 app.use("/api/v1/user",userRouter)
 app.use("/api/v1/url",urlRouter)
+app.use("/api/v1/dashboard",dashboardRouter)
 
 
 export {app}
